@@ -1,0 +1,24 @@
+html,body {
+    font-size: 10pt;
+    background-color: #FF00C8;
+    font-family: georgia ,serif;
+}
+#parent{
+  background-color: #FFFFFF;
+  margin: 5px;
+  border-radius: 10px;
+}
+#child{
+  border: 3px;
+  
+}
+#butt{
+  border-radius: 50px;
+  border-color:#FE00C7 #0052FE #00FEBC #007CFE;
+  position :relative;
+  left:40%;
+  font-size:20px;
+  border-width: 2px;
+  background-color: #FF00C8;
+  color:white;
+}
