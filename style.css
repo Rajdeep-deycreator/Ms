@@ -22,19 +22,3 @@ html,body {
   background-color: #FF00C8;
   color:white;
 }
-#plz{
-  height:30px;
-  width:30px;
-  font-size: 30px;
-  position:relative;
-  left:40%;
-  animation:rot 4s infinite ease-in-out;
-}
-@keyframes rot{
-  0%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(360deg);
-  }
-}
