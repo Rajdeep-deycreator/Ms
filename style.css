@@ -22,3 +22,34 @@ html,body {
   background-color: #FF00C8;
   color:white;
 }
+#flltr{
+  position:relative;
+  left:90%;
+  top:90%;
+  width:5px;
+  animation: ltr 4s infinite ;
+}
+#flrtl{
+  position :relative;
+  width:0px;
+  height:0px;
+  animation: rtl 4s infinite alternate;
+}
+
+@keyframes rtl{
+  0%{
+    transform: rotate(300deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ltr {
+  0%{
+    transform: rotate(-300deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
