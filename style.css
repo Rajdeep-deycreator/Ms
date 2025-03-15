@@ -27,7 +27,7 @@ html,body {
   left:90%;
   top:90%;
   width:5px;
-  animation: ltr 4s infinite ;
+  animation: ltr 4s infinite alternate ;
 }
 #flrtl{
   position :relative;
@@ -39,9 +39,10 @@ html,body {
 @keyframes rtl{
   0%{
     transform: rotate(300deg);
+    
   }
   100%{
-    transform: rotate(360deg);
+    transform: rotatex(360deg);
   }
 }
 
