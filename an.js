@@ -21,4 +21,4 @@ setTimeout(function(){
   document.body.appendChild(msgbox);
   document.body.style.animation="scrolltop 7s forwards"
   msgbox.style.animation="fade 9s forwards"
-},6000)
+},8000)
