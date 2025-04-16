@@ -1,0 +1,109 @@
+
+    body {
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 50px;
+    
+    }
+    h1 {
+      font-size: 3em;
+      color: #ff4b2b;
+      animation: fade 6s ease-in-out ;
+    }
+    p {
+      font-size: 1.5em;
+      color: #333;
+      margin-top: 20px;
+    }
+    .heart {
+      color: red;
+      font-size: 2em;
+      animation: pulse 1.5s infinite,fade 6s;
+    }
+    #b1{
+      position: absolute;
+      left:40px;
+      margin:1px;
+      margin-bottom: 4px;
+      height:50px;
+      width:50px;
+      font-size:50px;
+      animation: rise 4s ease-in-out  forwards;
+    }
+        #b2{
+      position: absolute;
+      left:100px;
+      margin:1px;
+      margin-bottom: 4px;
+      height:50px;
+      width:50px;
+      font-size:50px;
+      animation: rise 4s ease-in forwards;
+    }
+      #b3{
+      position: absolute;
+      left:160px;
+      margin:1px;
+      margin-bottom: 4px;
+      height:50px;
+      width:50px;
+      font-size:50px;
+      animation: rise 4s ease-out forwards;
+    }
+            #b4{
+      position: absolute;
+      left:220px;
+      margin:1px;
+      margin-bottom: 4px;
+      height:50px;
+      width:50px;
+      font-size:50px;
+      animation: rise 4s ease-in-out forwards;
+    }
+            #b5{
+      position: absolute;
+      left:280px;
+      margin:1px;
+      margin-bottom: 4px;
+      height:50px;
+      width:50px;
+      font-size:50px;
+      animation: rise 4s  ease-in forwards;
+    }
+    .mesg{
+      background-color: #FFFFFF;
+      border-radius: 30px;
+      animation: scrolltop 12s ease-out forwards;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    @keyframes rise {
+      0% {top:100%;
+          opacity: 1;
+      }
+      100%{top:0%;
+        opacity:0;
+      }
+    }
+    @keyframes fade{
+      0%{
+        opacity:0;
+      }
+      100%{
+        opacity:1;
+      }
+    }
+    @keyframes scrolltop {
+      0%{
+        transform: translateY(-700%);
+        opacity: 0;
+      }
+      100%{
+        transform: translateY(-90%);
+        opacity: 1;
+      }
+    }
