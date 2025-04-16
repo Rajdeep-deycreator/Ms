@@ -12,3 +12,12 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const an=firebase.analytics();
   
+
+
+setTimeout(function(){
+  var msgbox=document.createElement('div');
+  msgbox.setAttribute('id','mesg')
+  msgbox.innerHTML +=" <p>Happy birthday to an incredible person! Today marks a special day, a celebration of your life, your laughter, and your beautiful spirit. May this year be filled with adventure, happiness, and all your heart's desires. You deserve every bit of love and celebration that comes your way. Here's to another amazing year of growth!......I know I have messed up everything....but this is just a small birthday gift and best wishes from my side😅</p>"
+  document.body.appendChild(msgbox);
+  msgbox.style.animation=' scrolltop 12s ease-in-out forwards'
+},6000)
