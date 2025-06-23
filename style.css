@@ -1,56 +1,79 @@
-html,body {
-    font-size: 10pt;
-    background-color: #FF00C8;
-    font-family: georgia ,serif;
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: black;
+  color: white;
+  text-align: center;
 }
-#parent{
-  background-color: #FFFFFF;
-  margin: 5px;
-  border-radius: 10px;
-}
-#child{
-  border: 3px;
+
+.lock-screen {
+  padding-top: 40%;
   
 }
-#butt{
-  border-radius: 50px;
-  border-color:#FE00C7 #0052FE #00FEBC #007CFE;
-  position :relative;
-  left:40%;
-  font-size:20px;
-  border-width: 3px;
-  background-color: #FF00C8;
-  color:white;
-}
-#flltr{
-  position:relative;
-  left:90%;
-  top:90%;
-  width:5px;
-  animation: ltr 4s infinite alternate ;
-}
-#flrtl{
-  position :relative;
-  width:0px;
-  height:0px;
-  animation: rtl 4s infinite alternate;
+
+.time {
+  font-size: 48px;
+  
 }
 
-@keyframes rtl{
-  0%{
-    transform: rotate(300deg);
+.date {
+  margin: 10px 0;
+}
+
+.swipe-up {
+  margin-top: 20px;
+  opacity: 0.6;
+}
+
+.home-screen, .message-app {
+  padding: 20px;
+}
+
+.status-bar {
+  background: #222;
+  padding: 5px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.apps {
+  margin-top: 50px;
+}
+
+.app {
+  font-size: 40px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.special-message {
+  font-size: 18px;
+  color: pink;
+  margin-top: 30px;
+}
+h1{
+  position:fixed;
+  top:60%;
+  left:35%;
+  color:#B0B0B08A;
+}
+
+@keyframes aniunlock{
+  from{
+    transform: translateY(100%);
     
   }
-  100%{
-    transform: rotatex(360deg);
+  to{
+    transform: translateY(-2000%);
+    
   }
 }
 
-@keyframes ltr {
-  0%{
-    transform: rotate(-300deg);
-  }
-  100%{
-    transform: rotate(-360deg);
-  }
+#loader{
+  height:100vh;
+  width: 100vw;
 }

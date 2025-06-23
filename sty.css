@@ -1,0 +1,56 @@
+html,body {
+    font-size: 10pt;
+    background-color: #FF00C8;
+    font-family: georgia ,serif;
+}
+#parent{
+  background-color: #FFFFFF;
+  margin: 5px;
+  border-radius: 10px;
+}
+#child{
+  border: 3px;
+  
+}
+#butt{
+  border-radius: 50px;
+  border-color:#FE00C7 #0052FE #00FEBC #007CFE;
+  position :relative;
+  left:40%;
+  font-size:20px;
+  border-width: 3px;
+  background-color: #FF00C8;
+  color:white;
+}
+#flltr{
+  position:relative;
+  left:90%;
+  top:90%;
+  width:5px;
+  animation: ltr 4s infinite alternate ;
+}
+#flrtl{
+  position :relative;
+  width:0px;
+  height:0px;
+  animation: rtl 4s infinite alternate;
+}
+
+@keyframes rtl{
+  0%{
+    transform: rotate(300deg);
+    
+  }
+  100%{
+    transform: rotatex(360deg);
+  }
+}
+
+@keyframes ltr {
+  0%{
+    transform: rotate(-300deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
